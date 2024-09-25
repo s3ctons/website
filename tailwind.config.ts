@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
+import colors from "tailwindcss/colors"
 
 const config: Config = {
   content: [
@@ -8,12 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        anonymousPro: ["var(--anonymous-pro)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: colors.emerald,
+        secondary: colors.zinc,
+        yellow: "#ffd455",
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
