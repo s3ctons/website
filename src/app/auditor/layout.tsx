@@ -9,7 +9,7 @@ export default function AuditorLayout({
   return (
     <div className="flex h-dvh flex-col">
       <AuditorHeader />
-      <div className="container mx-auto grow p-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto mt-2 grow p-4 sm:px-6 lg:px-8">
         {children}
       </div>
       <Footer />
