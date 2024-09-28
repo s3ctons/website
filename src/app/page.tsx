@@ -4,7 +4,7 @@ import { InfoBoxes } from "@/components/InfoBoxes"
 import { InfoSection } from "@/components/InfoSection"
 import { Footer } from "@/components/Footer"
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Header />
