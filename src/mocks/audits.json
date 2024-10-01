@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Super Company",
+    "start_date": "2024-11-05T00:00:00.000Z",
+    "end_date": "2024-12-05T00:00:00.000Z",
+    "amount": 70000,
+    "currency": "USDT",
+    "tags": ["FunC", "Super fun"]
+  },
+  {
+    "id": 2,
+    "title": "Hamster Company",
+    "start_date": "2024-11-07T00:00:00.000Z",
+    "end_date": "2024-11-20T00:00:00.000Z",
+    "amount": 5000,
+    "currency": "USDC",
+    "tags": ["Tact", "Fun Tact"]
+  },
+  {
+    "id": 3,
+    "title": "Big pocket",
+    "start_date": "2024-12-05T00:00:00.000Z",
+    "end_date": "2025-01-01T00:00:00.000Z",
+    "amount": 100000,
+    "currency": "USDT",
+    "tags": ["Fun C"]
+  },
+  {
+    "id": 4,
+    "title": "Small pocket",
+    "start_date": "2024-09-05T00:00:00.000Z",
+    "end_date": "2024-11-30T14:00:00.000Z",
+    "amount": 10000,
+    "currency": "USDT",
+    "tags": ["Fun C"]
+  },
+  {
+    "id": 5,
+    "title": "Fat Company",
+    "start_date": "2024-08-01T00:00:00.000Z",
+    "end_date": "2024-11-01T00:00:00.000Z",
+    "amount": 100000,
+    "currency": "USDC",
+    "tags": ["Tact"]
+  },
+  {
+    "id": 6,
+    "title": "Black Rabbit",
+    "start_date": "2024-08-10T00:00:00.000Z",
+    "end_date": "2024-09-10T00:00:00.000Z",
+    "amount": 55000,
+    "currency": "USDC",
+    "tags": ["Tact", "Rabbit Tact"]
+  }
+]

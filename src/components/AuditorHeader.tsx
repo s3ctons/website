@@ -9,6 +9,7 @@ import {
   FaClipboardList,
   FaFont,
   FaClipboardCheck,
+  FaCentos,
 } from "react-icons/fa"
 import { Bars } from "@/components/svg/Bars"
 import { Cross } from "@/components/svg/Cross"
@@ -40,8 +41,8 @@ export const AuditorHeader = () => {
           className="flex items-center justify-between gap-x-1"
         >
           <Link href="/auditor">
-            <div className="flex select-none items-center gap-6">
-              <div>icon</div>
+            <div className="flex select-none items-center gap-4">
+              <FaCentos size={40} />
               <div className="text-4xl">SECTONS</div>
             </div>
           </Link>
