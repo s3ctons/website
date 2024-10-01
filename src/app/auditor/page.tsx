@@ -2,7 +2,7 @@ import audits from "@/mocks/audits.json"
 import { AuditCardsBlock } from "@/components/AuditCardsBlock"
 import { ProfileBlock } from "@/components/ProfileBlock"
 
-export default function AuditorPage() {
+export default function AuditorHomePage() {
   const activeAudits = audits.filter(
     (audit) =>
       Date.parse(audit.end_date) > Date.now() &&

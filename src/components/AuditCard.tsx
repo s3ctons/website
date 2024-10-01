@@ -1,13 +1,13 @@
 import moment from "moment"
+import Link from "next/link"
 import { FaCrow } from "react-icons/fa"
 import { Badge } from "@/components/Badge"
-import { IAudit, AuditType } from "@/types"
+import { getAuditType } from "@/utils"
+import { IAudit } from "@/types"
 
-const getAuditTimeCount = (
-  startDate: string,
-  endDate: string,
-  type: AuditType,
-) => {
+const getAuditTimeCount = (startDate: string, endDate: string) => {
+  const type = getAuditType(startDate, endDate)
+
   switch (type) {
     case "active":
       return `ENDS ${moment(endDate).fromNow().toUpperCase()}`
@@ -18,25 +18,16 @@ const getAuditTimeCount = (
   }
 }
 
-const getPoolString = (amount: number, currency: string): string => {
-  return `${amount.toLocaleString()} in ${currency}`
-}
-
-export const AuditCard = ({
-  audit,
-  type,
-}: {
-  audit: IAudit
-  type: AuditType
-}) => {
+export const AuditCard = ({ audit }: { audit: IAudit }) => {
   return (
-    <div
+    <Link
+      href={`/auditor/audits/${audit.id}`}
       key={audit.id}
       className="flex cursor-pointer flex-col gap-2 border border-secondary-700 bg-secondary-800 p-5 hover:bg-secondary-700"
     >
       <div className="flex justify-between border-b border-b-secondary-600 pb-1">
-        <div>{getAuditTimeCount(audit.start_date, audit.end_date, type)}</div>
-        <div>{getPoolString(audit.amount, audit.currency)}</div>
+        <div>{getAuditTimeCount(audit.start_date, audit.end_date)}</div>
+        <div>{`${audit.amount.toLocaleString()} in ${audit.currency}`}</div>
       </div>
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
@@ -51,6 +42,6 @@ export const AuditCard = ({
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   )
 }

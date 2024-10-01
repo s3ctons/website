@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Super Company",
+    "company_description": "We are super. Smart, safe, rich",
     "start_date": "2024-11-05T00:00:00.000Z",
     "end_date": "2024-12-05T00:00:00.000Z",
     "amount": 70000,
@@ -20,6 +21,7 @@
   {
     "id": 3,
     "title": "Big pocket",
+    "company_description": "We have a big pocket of money",
     "start_date": "2024-12-05T00:00:00.000Z",
     "end_date": "2025-01-01T00:00:00.000Z",
     "amount": 100000,
@@ -29,6 +31,7 @@
   {
     "id": 4,
     "title": "Small pocket",
+    "company_description": "We have a small pocket of money",
     "start_date": "2024-09-05T00:00:00.000Z",
     "end_date": "2024-11-30T14:00:00.000Z",
     "amount": 10000,

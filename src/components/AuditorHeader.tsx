@@ -9,10 +9,10 @@ import {
   FaClipboardList,
   FaFont,
   FaClipboardCheck,
-  FaCentos,
 } from "react-icons/fa"
 import { Bars } from "@/components/svg/Bars"
 import { Cross } from "@/components/svg/Cross"
+import { Logo } from "@/components/svg/Logo"
 
 export const AuditorHeader = () => {
   const pathname = usePathname()
@@ -41,8 +41,8 @@ export const AuditorHeader = () => {
           className="flex items-center justify-between gap-x-1"
         >
           <Link href="/auditor">
-            <div className="flex select-none items-center gap-4">
-              <FaCentos size={40} />
+            <div className="flex select-none items-center gap-2">
+              <Logo />
               <div className="text-4xl">SECTONS</div>
             </div>
           </Link>
@@ -118,7 +118,7 @@ export const AuditorHeader = () => {
               </div>
 
               <Link
-                className="mt-2 self-start bg-primary-900 p-2 font-medium hover:bg-primary-800 md:ml-3 md:mt-0"
+                className="mt-2 self-start border border-secondary-600 bg-secondary-900 px-3 py-2 font-medium hover:bg-secondary-800 md:ml-3 md:mt-0"
                 href="/auditor/logout"
               >
                 Log Out
