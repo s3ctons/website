@@ -19,7 +19,6 @@ export default function AuditorHomePage() {
 
       <div>
         <AuditCardsBlock
-          type="active"
           title="ACTIVE AUDITS"
           noAuditsText="There are no active audits"
           audits={activeAudits}
@@ -28,7 +27,6 @@ export default function AuditorHomePage() {
 
       <div>
         <AuditCardsBlock
-          type="upcoming"
           title="UPCOMING AUDITS"
           noAuditsText="There are no upcoming audits"
           audits={upcomingAudits}
