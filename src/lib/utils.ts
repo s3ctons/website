@@ -1,4 +1,4 @@
-import { AuditType } from "@/types"
+import { AuditType } from "@/lib/types"
 
 export const getAuditType = (
   startDate: string,

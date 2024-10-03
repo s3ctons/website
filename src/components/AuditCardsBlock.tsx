@@ -1,5 +1,5 @@
 import { AuditCard } from "@/components/AuditCard"
-import { IAudit } from "@/types"
+import { IAudit } from "@/lib/types"
 
 export const AuditCardsBlock = ({
   title,
