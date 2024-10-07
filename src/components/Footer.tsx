@@ -3,7 +3,7 @@ export const Footer = () => (
     <a
       href="#"
       target="_blank"
-      className="text-secondary-400 hover:text-primary-600"
+      className="text-secondary-300 hover:text-primary-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ export const Footer = () => (
     <a
       href="#"
       target="_blank"
-      className="text-secondary-400 hover:text-primary-600"
+      className="text-secondary-300 hover:text-primary-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export const Footer = () => (
     <a
       href="#"
       target="_blank"
-      className="text-secondary-400 hover:text-primary-600"
+      className="text-secondary-300 hover:text-primary-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ export const Footer = () => (
     <a
       href="#"
       target="_blank"
-      className="text-secondary-400 hover:text-primary-600"
+      className="text-secondary-300 hover:text-primary-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

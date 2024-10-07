@@ -24,7 +24,7 @@ export const sendProtocolApplication = async (
     company_website: formData.get("company_website"),
     description: formData.get("description"),
     start_date: formData.get("start_date"),
-    sourse: formData.get("sourse"),
+    source: formData.get("source"),
   }
 
   const validatedFields = ProtocolApplicationSchema.safeParse(parsedFormData)
@@ -36,14 +36,25 @@ export const sendProtocolApplication = async (
   }
 
   try {
-    console.log("Send email")
-    return {
-      message: "Application has been sent. We will contact you in 1-2 days",
+    const response = await fetch("/api/email/protocol", {
+      method: "POST",
+      body: JSON.stringify(parsedFormData),
+    })
+
+    if (response.ok) {
+      return {
+        message: "Application has been sent. We will contact you in 1-2 days",
+      }
+    } else {
+      return {
+        error:
+          "Failed to send application. Please try again or contact us via socials",
+      }
     }
   } catch {
     return {
       error:
-        "Error: Failed to send application. Please try again or contact us via socials",
+        "Failed to send application. Please try again or contact us via socials",
     }
   }
 }
@@ -62,7 +73,7 @@ export const sendJudgeApplication = async (
     name: formData.get("name"),
     telegram_username: formData.get("telegram_username"),
     email: formData.get("email"),
-    sourse: formData.get("sourse"),
+    source: formData.get("source"),
     description: formData.get("description"),
   }
 
@@ -75,14 +86,25 @@ export const sendJudgeApplication = async (
   }
 
   try {
-    console.log("Send email")
-    return {
-      message: "Application has been sent. We will contact you in 1-2 days",
+    const response = await fetch("/api/email/judge", {
+      method: "POST",
+      body: JSON.stringify(parsedFormData),
+    })
+
+    if (response.ok) {
+      return {
+        message: "Application has been sent. We will contact you in 1-2 days",
+      }
+    } else {
+      return {
+        error:
+          "Failed to send application. Please try again or contact us via socials",
+      }
     }
   } catch {
     return {
       error:
-        "Error: Failed to send application. Please try again or contact us via socials",
+        "Failed to send application. Please try again or contact us via socials",
     }
   }
 }

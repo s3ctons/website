@@ -67,12 +67,12 @@ export const JudgeApplicationForm = () => {
           </div>
 
           <div>
-            <label htmlFor="sourse" className="mb-2 block">
+            <label htmlFor="source" className="mb-2 block">
               How did you hear about Sectons?
             </label>
             <input
-              id="sourse"
-              name="sourse"
+              id="source"
+              name="source"
               className="w-full border border-secondary-700 bg-secondary-700 px-3 py-2 outline-none focus:border-secondary-500"
             />
           </div>
@@ -100,10 +100,10 @@ export const JudgeApplicationForm = () => {
           <div>
             <SubmitButton />
             {state.error && (
-              <p className="mt-2 text-sm text-red-400">{state.error}</p>
+              <p className="mt-1 text-sm text-red-400">{state.error}</p>
             )}
             {state.message && (
-              <p className="mt-2 text-sm text-primary-400">{state.message}</p>
+              <p className="mt-1 text-sm text-primary-400">{state.message}</p>
             )}
           </div>
         </div>

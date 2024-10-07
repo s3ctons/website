@@ -38,7 +38,7 @@ export default function AuditorAuditsPage() {
 
       <div>
         <AuditCardsBlock
-          title="Completed AUDITS"
+          title="COMPLETED AUDITS"
           noAuditsText="There are no completed audits"
           audits={completedAudits}
         />

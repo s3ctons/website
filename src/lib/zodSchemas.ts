@@ -29,7 +29,7 @@ export const ProtocolApplicationSchema = z.object({
   }),
   description: z.string(),
   start_date: z.string(),
-  sourse: z.string(),
+  source: z.string(),
 })
 
 export type ProtocolApplication = z.infer<typeof ProtocolApplicationSchema>
@@ -52,12 +52,12 @@ export const JudgeApplicationSchema = z.object({
     .trim()
     .min(1, { message: "Field is required" })
     .pipe(z.string().email({ message: "Invalid email format" })),
-  sourse: z.string(),
+  source: z.string(),
   description: z
     .string()
     .trim()
-    .refine((val) => val.length <= 5000 && val.length >= 50, {
-      message: "Must be from 50 to 5000 symbols",
+    .refine((val) => val.length >= 30, {
+      message: "Must be at least 30 symbols",
     }),
 })
 

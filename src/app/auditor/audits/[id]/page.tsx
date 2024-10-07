@@ -3,7 +3,7 @@ import Link from "next/link"
 import { redirect } from "next/navigation"
 import { FaCrow, FaGithub, FaArrowLeft } from "react-icons/fa"
 import audits from "@/mocks/audits.json"
-import { getAuditType } from "@/utils"
+import { getAuditType } from "@/lib/utils"
 
 const getAuditTimeCount = (startDate: string, endDate: string) => {
   const type = getAuditType(startDate, endDate)
@@ -29,7 +29,7 @@ export default function AuditPage({ params }: { params: { id: string } }) {
     <section className="flex flex-col gap-6">
       <Link href="/auditor/audits" className="flex items-center gap-3">
         <FaArrowLeft size={15} />
-        Back to audits
+        Back
       </Link>
       <div className="flex flex-col justify-between gap-4 border border-secondary-700 bg-secondary-800 p-3 sm:flex-row sm:items-center sm:gap-2">
         <div className="flex items-center gap-6 sm:justify-between">
