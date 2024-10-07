@@ -7,7 +7,7 @@ export const FormValidationText = ({
 }) => {
   return (
     <p
-      className={`${isValid ? "text-primary-400" : "text-red-400"} mt-1 text-sm text-red-400`}
+      className={`${isValid ? "text-primary-400" : "text-red-400"} mt-1 text-sm`}
     >
       {text}
     </p>
