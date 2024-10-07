@@ -1,7 +1,9 @@
 "use client"
 
-import { useFormState, useFormStatus } from "react-dom"
+import { useFormState } from "react-dom"
 import { sendJudgeApplication, JudgeFormState } from "@/lib/serverActions"
+import { FormValidationText } from "@/components/FormValidationText"
+import { FormSubmitButton } from "@/components/FormSubmitButton"
 
 export const JudgeApplicationForm = () => {
   const initialState: JudgeFormState = {}
@@ -26,9 +28,7 @@ export const JudgeApplicationForm = () => {
             />
             {state.errors?.name?._errors &&
               state.errors?.name?._errors.map((error: string) => (
-                <p className="mt-1 text-sm text-red-400" key={error}>
-                  {error}
-                </p>
+                <FormValidationText isValid={false} text={error} key="name" />
               ))}
           </div>
 
@@ -43,9 +43,11 @@ export const JudgeApplicationForm = () => {
             />
             {state.errors?.telegram_username?._errors &&
               state.errors?.telegram_username?._errors.map((error: string) => (
-                <p className="mt-1 text-sm text-red-400" key={error}>
-                  {error}
-                </p>
+                <FormValidationText
+                  isValid={false}
+                  text={error}
+                  key="telegram_username"
+                />
               ))}
           </div>
 
@@ -60,9 +62,7 @@ export const JudgeApplicationForm = () => {
             />
             {state.errors?.email?._errors &&
               state.errors?.email?._errors.map((error: string) => (
-                <p className="mt-1 text-sm text-red-400" key={error}>
-                  {error}
-                </p>
+                <FormValidationText isValid={false} text={error} key="email" />
               ))}
           </div>
 
@@ -91,37 +91,25 @@ export const JudgeApplicationForm = () => {
             ></textarea>
             {state.errors?.description?._errors &&
               state.errors?.description?._errors.map((error: string) => (
-                <p className="mt-1 text-sm text-red-400" key={error}>
-                  {error}
-                </p>
+                <FormValidationText
+                  isValid={false}
+                  text={error}
+                  key="description"
+                />
               ))}
           </div>
 
           <div>
-            <SubmitButton />
+            <FormSubmitButton />
             {state.error && (
-              <p className="mt-1 text-sm text-red-400">{state.error}</p>
+              <FormValidationText isValid={false} text={state.error} />
             )}
             {state.message && (
-              <p className="mt-1 text-sm text-primary-400">{state.message}</p>
+              <FormValidationText isValid text={state.message} />
             )}
           </div>
         </div>
       </div>
     </form>
-  )
-}
-
-const SubmitButton = () => {
-  const { pending } = useFormStatus()
-
-  return (
-    <button
-      className="mt-8 w-full bg-primary-900 px-[13px] py-[9px] font-bold hover:bg-primary-800 disabled:bg-secondary-700"
-      type="submit"
-      disabled={pending}
-    >
-      {pending ? "Submitting..." : "Submit"}
-    </button>
   )
 }
