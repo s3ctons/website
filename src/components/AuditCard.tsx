@@ -2,8 +2,8 @@ import moment from "moment"
 import Link from "next/link"
 import { FaCrow } from "react-icons/fa"
 import { Badge } from "@/components/Badge"
-import { getAuditType } from "@/utils"
-import { IAudit } from "@/types"
+import { IAudit } from "@/lib/types"
+import { getAuditType } from "@/lib/utils"
 
 const getAuditTimeCount = (startDate: string, endDate: string) => {
   const type = getAuditType(startDate, endDate)
