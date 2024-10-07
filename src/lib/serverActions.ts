@@ -36,7 +36,7 @@ export const sendProtocolApplication = async (
   }
 
   try {
-    const response = await fetch("/api/email/protocol", {
+    const response = await fetch("/api/application/protocol", {
       method: "POST",
       body: JSON.stringify(parsedFormData),
     })
@@ -86,7 +86,7 @@ export const sendJudgeApplication = async (
   }
 
   try {
-    const response = await fetch("/api/email/judge", {
+    const response = await fetch("/api/application/judge", {
       method: "POST",
       body: JSON.stringify(parsedFormData),
     })

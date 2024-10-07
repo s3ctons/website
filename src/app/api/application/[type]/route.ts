@@ -34,6 +34,7 @@ export async function POST(
         .map(([key, value]) => `<h3>${key}</h3><p>${value}</p>`)
         .join(""),
     }
+
     return new Promise<string>((resolve, reject) => {
       transport.sendMail(mailOptions, function (err) {
         if (!err) {
@@ -46,8 +47,8 @@ export async function POST(
   }
 
   try {
-    await sendMailPromise()
-    return NextResponse.json({ message: "Email sent" })
+    const message = await sendMailPromise()
+    return NextResponse.json({ message })
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 })
   }
