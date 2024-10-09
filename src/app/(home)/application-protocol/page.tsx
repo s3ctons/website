@@ -9,11 +9,10 @@ export default function ProtocolApplicationPage() {
         <div className="container mx-auto px-6 py-6 lg:py-10">
           <div className="flex flex-col gap-6">
             <h1 className="text-center text-2xl font-medium sm:text-3xl md:text-4xl lg:text-5xl">
-              Apply for an audit of your protocol
+              Apply for an audit of your Protocol
             </h1>
             <p className="text-center text-base md:text-lg">
-              Some extra text. We can write that we will connect in 1-2 days or
-              smth idk
+              We will contact you soon to discuss audit details
             </p>
           </div>
         </div>

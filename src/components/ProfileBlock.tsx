@@ -9,7 +9,7 @@ export const ProfileBlock = ({ name }: { name: string }) => {
         </div>
         <div className="text-lg">{name}</div>
       </div>
-      <div className="sm:pr-6">No audits you participate in</div>
+      <div className="sm:pr-6">No audits you participated in</div>
     </div>
   )
 }

@@ -4,14 +4,12 @@ export const Hero = () => {
       <div className="mx-auto space-y-8 px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="block text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl">
-            Ton smart contract audit contests platform
+            TON Smart Contract Audit Contests
           </h1>
         </div>
 
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-lg">
-            We are super cool and suuuper safe. You can trust us completely.
-          </p>
+          <p className="text-lg">Best TON security experts in one place</p>
         </div>
       </div>
     </div>

@@ -103,13 +103,14 @@ export const AuditorHeader = () => {
                     Reports
                   </Link>
 
-                  <Link
+                  <a
                     className={`${pathname === "/auditor/docs" && "bg-primary-900"} flex items-center p-2 hover:bg-primary-900`}
-                    href="/auditor/docs"
+                    href="https://docs.sectons.com/"
+                    target="_blank"
                   >
                     <FaFileAlt className="me-3 shrink-0 md:hidden" />
                     Docs
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -119,7 +120,7 @@ export const AuditorHeader = () => {
 
               <Link
                 className="mt-2 self-start border border-secondary-600 bg-secondary-900 px-3 py-2 font-medium hover:bg-secondary-800 md:ml-3 md:mt-0"
-                href="/auditor/logout"
+                href="/"
               >
                 Log Out
               </Link>

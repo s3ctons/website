@@ -12,7 +12,7 @@ export const JudgeApplicationForm = () => {
   return (
     <form action={formAction}>
       <h2 className="mb-6 text-center text-3xl font-semibold">
-        Judge Audit Application
+        Judge Application
       </h2>
 
       <div className="flex flex-col justify-between gap-4 md:flex-row md:gap-8">

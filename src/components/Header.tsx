@@ -12,10 +12,10 @@ export const Header = () => {
           </div>
         </Link>
         <Link
-          href="#"
-          className="bg-secondary-900 px-4 py-3 hover:bg-secondary-800"
+          className="border border-secondary-600 bg-secondary-900 px-3 py-2 font-medium hover:bg-secondary-800"
+          href="/auditor"
         >
-          LOG IN
+          Log In
         </Link>
       </div>
     </header>

@@ -8,8 +8,7 @@ export const InfoBoxes = () => {
         <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
           <InfoBox
             heading="For Protocols"
-            text="Trust your protocol safety to super-duper ton auditors. And pay them
-            properly."
+            text="Secure your protocol now"
             button={
               <Link
                 className="inline-block grow-0 self-start bg-primary-900 px-4 py-2 font-semibold hover:bg-primary-800"
@@ -21,12 +20,11 @@ export const InfoBoxes = () => {
           />
           <InfoBox
             heading="For Auditors"
-            text="If you are a super-duper auditor, welcome. Show your skills and earn
-            some moneys."
+            text="Find vulnerabilities and receive rewards"
             button={
               <Link
                 className="inline-block grow-0 self-start bg-primary-900 px-4 py-2 font-semibold hover:bg-primary-800"
-                href="#"
+                href="/auditor"
               >
                 Become Auditor
               </Link>
@@ -34,8 +32,7 @@ export const InfoBoxes = () => {
           />
           <InfoBox
             heading="For Judges"
-            text="If you are super-extra-duper and experienced auditor, become a
-            judge."
+            text="Judge the audit contests and get paid"
             button={
               <Link
                 className="inline-block grow-0 self-start bg-primary-900 px-4 py-2 font-semibold hover:bg-primary-800"

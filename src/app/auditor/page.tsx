@@ -15,7 +15,7 @@ export default function AuditorHomePage() {
 
   return (
     <section className="flex flex-col gap-6">
-      <ProfileBlock name="Xenia" />
+      <ProfileBlock name="Auditor Name" />
 
       <div>
         <AuditCardsBlock

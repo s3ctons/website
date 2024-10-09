@@ -1,59 +1,59 @@
 [
   {
     "id": 1,
-    "title": "Super Company",
-    "company_description": "We are super. Smart, safe, rich",
+    "title": "Stakery",
+    "company_description": "Stake with us",
     "start_date": "2024-11-05T00:00:00.000Z",
     "end_date": "2024-12-05T00:00:00.000Z",
     "amount": 70000,
     "currency": "USDT",
-    "tags": ["FunC", "Super fun"]
+    "tags": ["FunC"]
   },
   {
     "id": 2,
-    "title": "Hamster Company",
+    "title": "Dexter",
     "start_date": "2024-11-07T00:00:00.000Z",
     "end_date": "2024-11-20T00:00:00.000Z",
-    "amount": 5000,
+    "amount": 200000,
     "currency": "USDC",
-    "tags": ["Tact", "Fun Tact"]
+    "tags": ["Tact", "FunC"]
   },
   {
     "id": 3,
-    "title": "Big pocket",
-    "company_description": "We have a big pocket of money",
+    "title": "DeFinitely",
+    "company_description": "Definitely safe",
     "start_date": "2024-12-05T00:00:00.000Z",
     "end_date": "2025-01-01T00:00:00.000Z",
     "amount": 100000,
     "currency": "USDT",
-    "tags": ["Fun C"]
+    "tags": ["FunC"]
   },
   {
     "id": 4,
-    "title": "Small pocket",
-    "company_description": "We have a small pocket of money",
+    "title": "Swap & Tap",
+    "company_description": "First gamified DEX",
     "start_date": "2024-09-05T00:00:00.000Z",
     "end_date": "2024-11-30T14:00:00.000Z",
-    "amount": 10000,
+    "amount": 150000,
     "currency": "USDT",
-    "tags": ["Fun C"]
+    "tags": ["FunC"]
   },
   {
     "id": 5,
-    "title": "Fat Company",
+    "title": "Liquid Stake",
     "start_date": "2024-08-01T00:00:00.000Z",
     "end_date": "2024-11-01T00:00:00.000Z",
-    "amount": 100000,
+    "amount": 120000,
     "currency": "USDC",
     "tags": ["Tact"]
   },
   {
     "id": 6,
-    "title": "Black Rabbit",
+    "title": "Black Box",
     "start_date": "2024-08-10T00:00:00.000Z",
     "end_date": "2024-09-10T00:00:00.000Z",
     "amount": 55000,
     "currency": "USDC",
-    "tags": ["Tact", "Rabbit Tact"]
+    "tags": ["Tact", "FunC"]
   }
 ]

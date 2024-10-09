@@ -9,11 +9,10 @@ export default function JudgeApplicationPage() {
         <div className="container mx-auto px-6 py-6 lg:py-10">
           <div className="flex flex-col gap-6">
             <h1 className="text-center text-2xl font-medium sm:text-3xl md:text-4xl lg:text-5xl">
-              Become a judge in competitive audits
+              Become a Judge in competitive audits
             </h1>
             <p className="text-center text-base md:text-lg">
-              Some extra text. We can write that we will connect in 1-2 days or
-              smth idk
+              We will review your application and will contact you
             </p>
           </div>
         </div>

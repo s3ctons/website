@@ -4,10 +4,10 @@ import { Discord } from "@/components/svg/socials/Discord"
 import { GitHub } from "@/components/svg/socials/GitHub"
 
 const socials = [
-  { icon: <Twitter />, href: "#" },
-  { icon: <Telegram />, href: "#" },
-  { icon: <Discord />, href: "#" },
-  { icon: <GitHub />, href: "#" },
+  { icon: <Twitter />, href: "https://x.com/s3ctons" },
+  { icon: <Telegram />, href: "https://t.me/s3ctons" },
+  { icon: <Discord />, href: "https://discord.gg/Ajdh6B3Qe9" },
+  { icon: <GitHub />, href: "https://github.com/s3ctons" },
 ]
 
 export const Footer = () => (
