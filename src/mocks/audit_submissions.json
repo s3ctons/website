@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "audit_id": 4,
+    "title": "Small pocket",
+    "start_date": "2024-09-05T00:00:00.000Z",
+    "end_date": "2024-11-30T14:00:00.000Z",
+    "findings": [
+      { "id": 1, "type": "QA Report", "date": "2024-09-30T14:00:00.000Z" },
+      { "id": 2, "type": "QA Report", "date": "2024-10-05T14:00:00.000Z" }
+    ]
+  },
+  {
+    "id": 2,
+    "audit_id": 5,
+    "title": "Fat Company",
+    "start_date": "2024-08-01T00:00:00.000Z",
+    "end_date": "2024-11-01T00:00:00.000Z",
+    "findings": [
+      { "id": 3, "type": "QA Report", "date": "2024-09-01T00:00:00.000Z" }
+    ]
+  },
+  {
+    "id": 3,
+    "audit_id": 6,
+    "title": "Black Rabbit",
+    "start_date": "2024-08-10T00:00:00.000Z",
+    "end_date": "2024-09-10T00:00:00.000Z",
+    "findings": [
+      { "id": 4, "type": "QA Report", "date": "2024-09-01T00:00:00.000Z" }
+    ]
+  }
+]
