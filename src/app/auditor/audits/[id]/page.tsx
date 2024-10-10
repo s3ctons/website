@@ -2,7 +2,7 @@ import moment from "moment"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 import { FaCrow, FaGithub } from "react-icons/fa"
-import { AuditBackButton } from "@/components/AuditBackButton"
+import { BackButton } from "@/components/BackButton"
 import audits from "@/mocks/audits.json"
 import { getAuditType } from "@/lib/utils"
 
@@ -29,7 +29,7 @@ export default function AuditPage({ params }: { params: { id: string } }) {
 
   return (
     <section className="flex flex-col gap-6">
-      <AuditBackButton />
+      <BackButton />
       <div className="flex flex-col justify-between gap-4 border border-secondary-700 bg-secondary-800 p-3 sm:flex-row sm:items-center sm:gap-2">
         <div className="flex items-center gap-6 sm:justify-between">
           <div className="bg-secondary-900 p-5">
@@ -52,7 +52,7 @@ export default function AuditPage({ params }: { params: { id: string } }) {
           </Link>
           <Link
             className="bg-primary-900 p-3 text-center font-medium hover:bg-primary-800"
-            href="#"
+            href={`/auditor/audits/${audit.id}/submit-finding`}
           >
             Submit finding
           </Link>
