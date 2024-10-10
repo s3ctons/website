@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "type": "High Risk",
+    "type": "QA Report (low/non-critical)",
     "date": "2024-10-05T14:00:00.000Z",
     "content": "My report",
     "audit_id": 4,
