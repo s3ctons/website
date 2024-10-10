@@ -11,7 +11,7 @@ export const AuditCardsBlock = ({
   audits: IAudit[]
 }) => {
   return (
-    <>
+    <div>
       <div className="py-4 text-2xl">{title}</div>
       {audits.length === 0 && <div>{noAuditsText}</div>}
 
@@ -22,6 +22,6 @@ export const AuditCardsBlock = ({
           ))}
         </div>
       )}
-    </>
+    </div>
   )
 }

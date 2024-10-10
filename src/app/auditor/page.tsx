@@ -1,4 +1,5 @@
 import audits from "@/mocks/audits.json"
+import findings from "@/mocks/findings.json"
 import { AuditCardsBlock } from "@/components/AuditCardsBlock"
 import { ProfileBlock } from "@/components/ProfileBlock"
 
@@ -13,9 +14,17 @@ export default function AuditorHomePage() {
     (audit) => Date.parse(audit.start_date) >= Date.now(),
   )
 
+  const lastFindings = findings
+    .filter((finding) => Date.parse(finding.audit_end_date) > Date.now())
+    .sort(
+      (firstItem, secondItem) =>
+        Date.parse(firstItem.date) - Date.parse(secondItem.date),
+    )
+    .slice(0, 3)
+
   return (
     <section className="flex flex-col gap-6">
-      <ProfileBlock name="Auditor Name" />
+      <ProfileBlock name="Auditor Name" findings={lastFindings} />
 
       <div>
         <AuditCardsBlock
